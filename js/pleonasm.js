@@ -25,7 +25,9 @@
         var cb = onload_callbacks.pop();
         cb();
       }
+      return true;
     }
+    return false;
   }
 
   exports.onload = function(callback) {
